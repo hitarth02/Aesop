@@ -94,21 +94,24 @@ const Carousel = () => {
                 }}
             >
                 <SwiperSlide>
-                    <img src={mdh1} alt='c1' className=' z-10 -mt-10 object-cover'/>  
-                    <div className=' mt-28 w-[80%] mx-auto bg-white'>
-                            <Card
-                                    heading={"Ouranon Eau de Parfum"}
-                                    text={"A fragrance that evokes a silent monolith, the last vestige of a stone circle whose meaning has been lost to time—earthy minerality commingling with Frankincense, Hay and Myrrh."}
-                                    btnText={"Discover Ouranon"}
-                                    theme={"dark"}
-                                    dark={false}
-                                />
+                    <div className='bg-rose-950'>
+                        <img src={mdh1} alt='c1' className=' z-10 -mt-8 object-cover'/>  
+                        <div className=' mt-10 w-[90%] mx-auto bg-rose-950 pb-5'>
+                                <Card
+                                        heading={"Ouranon Eau de Parfum"}
+                                        text={"A fragrance that evokes a silent monolith, the last vestige of a stone circle whose meaning has been lost to time—earthy minerality commingling with Frankincense, Hay and Myrrh."}
+                                        btnText={"Discover Ouranon"}
+                                        theme={"light"}
+                                        dark={false}
+                                    />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                
+                <div className='bg-gray-600'>
+                    
                     <img src={mdh2} alt='c2' className=' -mt-8'/>
-                    <div className=' mt-32 w-[80%] mx-auto bg-white pb-5'>
+                    <div className=' mt-10 w-[90%] mx-auto bg-gray-600 pb-5'>
                         <Card
                                 heading={"Bouyant bodies"}
                                 text={"Three joyful elements of bathing—cleansing, scrubbing and hydrating—are facilitated by formulations boasting a variety of benefits and aromas, ensuring optimal satisfaction for all."}
@@ -117,17 +120,20 @@ const Carousel = () => {
                                 dark={false}
                         />
                     </div>
+                </div>
                 </SwiperSlide>
                 <SwiperSlide className='flex'>
-                    <img src={C3} alt='c3' className=' scale-150 mt-14'/>
-                    <div className=' mt-60 w-[80%] mx-auto bg-white pb-10'>
-                    <Card
-                            heading={"Parsley Seed Anti-Oxidant Intense Serum"}
-                            text={"Explore how this anti-oxidant-rich serum hydrates, replenishes and fortifies the skin via a suite of ingredients selected with urban dwellers in mind."}
-                            btnText={"Discover the formulation"}
-                            theme={"dark"}
-                            dark={false}
-                        />
+                    <div className=' bg-white'>
+                        <img src={C3} alt='c3' className=' scale-150 mt-14'/>
+                        <div className=' mt-36 w-[90%] mx-auto bg-white pb-16'>
+                        <Card
+                                heading={"Parsley Seed Anti-Oxidant Intense Serum"}
+                                text={"Explore how this anti-oxidant-rich serum hydrates, replenishes and fortifies the skin via a suite of ingredients selected with urban dwellers in mind."}
+                                btnText={"Discover the formulation"}
+                                theme={"dark"}
+                                dark={false}
+                            />
+                        </div>
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -145,7 +151,7 @@ const Carousel = () => {
             >
                 <SwiperSlide>
                     <div className='bg-rose-950'>
-                        <img src={sc3} alt='c1' className=' z-10 -mt-10 object-cover'/>  
+                        <img src={sc3} alt='c1' className=' z-10 -mt-8 object-cover'/>  
                         <div className=' mt-10 w-[90%] mx-auto bg-rose-950 pb-5'>
                                 <Card
                                         heading={"Ouranon Eau de Parfum"}
