@@ -6,7 +6,7 @@ import {AiOutlineMenu} from 'react-icons/ai';
 const Navbar = () => {
   return (
     <div className='flex flex-row justify-between lg:w-[96%] md:w-[92%] w-full mx-auto static top-0'>
-        <div className=' flex-row gap-x-[29px] lg:py-7 text-base items-center hidden lg:flex'>
+        <div className=' flex-row gap-x-[29px] lg:py-7 text-base items-center hidden lg:flex cursor-pointer'>
             <p>
                 Skin Care
             </p>
@@ -58,7 +58,7 @@ const Navbar = () => {
             </p>
         </div>
 
-        <div className='hidden md:flex flex-row items-center gap-x-7'>
+        <div className='hidden md:flex flex-row items-center gap-x-7 cursor-pointer'>
             <p>
                 Login
             </p>
