@@ -8,6 +8,9 @@ import 'swiper/css/pagination';
 import C1 from '../assets/c1.jpg';
 import C2 from '../assets/c2.jpg';
 import C3 from '../assets/c3.jpg';
+import sc1 from '../assets/sc1.jpg';
+import sc2 from '../assets/sc2.webp';
+import sc3 from '../assets/sc3.jpg';
 import mdh1 from '../assets/mdh1.jpg';
 import mdh2 from '../assets/mdh2.jpg';
 import Card from './Card';
@@ -81,7 +84,7 @@ const Carousel = () => {
 
 
         {/* {for mid size devises and mobile} */}
-        <div className=' md:h-[600px] overflow-hidden object-fill -z-10  lg:hidden'>
+        <div className=' hidden md:block overflow-hidden object-fill -z-10  lg:hidden'>
             <Swiper
                 modules={[EffectFade , Navigation , Pagination]}
                 effect='fade'
@@ -117,7 +120,57 @@ const Carousel = () => {
                 </SwiperSlide>
                 <SwiperSlide className='flex'>
                     <img src={C3} alt='c3' className=' scale-150 mt-14'/>
-                    <div className=' mt-40 w-[80%] mx-auto bg-white pb-10'>
+                    <div className=' mt-60 w-[80%] mx-auto bg-white pb-10'>
+                    <Card
+                            heading={"Parsley Seed Anti-Oxidant Intense Serum"}
+                            text={"Explore how this anti-oxidant-rich serum hydrates, replenishes and fortifies the skin via a suite of ingredients selected with urban dwellers in mind."}
+                            btnText={"Discover the formulation"}
+                            theme={"dark"}
+                            dark={false}
+                        />
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+        </div>
+
+        {/* {for mobile} */}
+        <div className=' md:hidden overflow-hidden object-fill -z-10  lg:hidden'>
+            <Swiper
+                modules={[EffectFade , Navigation , Pagination]}
+                effect='fade'
+                navigation={true}
+                pagination={{
+                    type:"fraction"
+                }}
+            >
+                <SwiperSlide>
+                    <img src={sc3} alt='c1' className=' z-10 -mt-10 object-cover'/>  
+                    <div className=' mt-28 w-[80%] mx-auto bg-white'>
+                            <Card
+                                    heading={"Ouranon Eau de Parfum"}
+                                    text={"A fragrance that evokes a silent monolith, the last vestige of a stone circle whose meaning has been lost to time—earthy minerality commingling with Frankincense, Hay and Myrrh."}
+                                    btnText={"Discover Ouranon"}
+                                    theme={"dark"}
+                                    dark={false}
+                                />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                
+                    <img src={sc2} alt='c2' className=' -mt-8'/>
+                    <div className=' mt-32 w-[80%] mx-auto bg-white pb-5'>
+                        <Card
+                                heading={"Bouyant bodies"}
+                                text={"Three joyful elements of bathing—cleansing, scrubbing and hydrating—are facilitated by formulations boasting a variety of benefits and aromas, ensuring optimal satisfaction for all."}
+                                btnText={"Discover Body & Hand care"}
+                                theme={"dark"}
+                                dark={false}
+                        />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='flex'>
+                    <img src={sc1} alt='c3' className=''/>
+                    <div className=' mt-24 w-[80%] mx-auto bg-white pb-10'>
                     <Card
                             heading={"Parsley Seed Anti-Oxidant Intense Serum"}
                             text={"Explore how this anti-oxidant-rich serum hydrates, replenishes and fortifies the skin via a suite of ingredients selected with urban dwellers in mind."}
