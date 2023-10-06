@@ -92,7 +92,7 @@ const Carousel = () => {
             >
                 <SwiperSlide>
                     <img src={mdh1} alt='c1' className=' z-10 -mt-10 object-cover'/>  
-                    <div className=' mt-32 w-[80%] mx-auto bg-white'>
+                    <div className=' mt-28 w-[80%] mx-auto bg-white'>
                             <Card
                                     heading={"Ouranon Eau de Parfum"}
                                     text={"A fragrance that evokes a silent monolith, the last vestige of a stone circle whose meaning has been lost to time—earthy minerality commingling with Frankincense, Hay and Myrrh."}
@@ -105,7 +105,7 @@ const Carousel = () => {
                 <SwiperSlide>
                 
                     <img src={mdh2} alt='c2' className=' -mt-8'/>
-                    <div className=' mt-28 w-[80%] mx-auto bg-white'>
+                    <div className=' mt-32 w-[80%] mx-auto bg-white pb-5'>
                         <Card
                                 heading={"Bouyant bodies"}
                                 text={"Three joyful elements of bathing—cleansing, scrubbing and hydrating—are facilitated by formulations boasting a variety of benefits and aromas, ensuring optimal satisfaction for all."}
